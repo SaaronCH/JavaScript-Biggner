@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <button onclick="changeColor()">Button</button>
+    <button onclick="changeColor1()">Button</button>
+    <button onclick="changeColor2()">Button</button>
+
+    <script>
+        const body = document.getElementById("body");
+        
+        function changeColor()
+        {
+        body.style.backgroundColor = "red";
+        }
+
+        function changeColor1()
+        {
+        body.style.backgroundColor = "blue";
+        }
+
+        function changeColor2()
+        {
+        body.style.backgroundColor = "green";
+        }
+
+
+        setInterval(function()  { 
+            body.style.opacity = 0;
+        }, 5000);
+    </script>
+</body>
+</html>
